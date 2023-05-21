@@ -35,7 +35,7 @@ To use the image filtering application, follow these steps:
 
 3. The application will apply the selected filter to the input image and save the filtered image to the specified output file.
 ### Files
-##helpers.c
+**helpers.c**
 
 ### grayscale
 
