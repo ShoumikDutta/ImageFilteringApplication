@@ -34,7 +34,61 @@ To use the image filtering application, follow these steps:
    - Replace `outfile` with the desired path and filename for the output BMP image file.
 
 3. The application will apply the selected filter to the input image and save the filtered image to the specified output file.
+### Files
+##helpers.c
 
+### grayscale
+
+```c
+void grayscale(int height, int width, RGBTRIPLE image[height][width])
+```
+
+This function converts an image to grayscale by averaging the RGB values of each pixel and setting them all to the same value.
+
+**Parameters:**
+- `height` (int): The height of the image.
+- `width` (int): The width of the image.
+- `image` (RGBTRIPLE[][]): The 2D array representing the image pixels.
+
+### sepia
+
+```c
+void sepia(int height, int width, RGBTRIPLE image[height][width])
+```
+
+This function converts an image to sepia tones by applying specific color transformation formulas to each pixel.
+
+**Parameters:**
+- `height` (int): The height of the image.
+- `width` (int): The width of the image.
+- `image` (RGBTRIPLE[][]): The 2D array representing the image pixels.
+
+### reflect
+
+```c
+void reflect(int height, int width, RGBTRIPLE image[height][width])
+```
+
+This function reflects the image horizontally by swapping the pixels from left to right.
+
+**Parameters:**
+- `height` (int): The height of the image.
+- `width` (int): The width of the image.
+- `image` (RGBTRIPLE[][]): The 2D array representing the image pixels.
+
+### blur
+
+```c
+void blur(int height, int width, RGBTRIPLE image[height][width])
+```
+
+This function applies a blur effect to the image by averaging the RGB values of each pixel with its surrounding pixels.
+
+**Parameters:**
+- `height` (int): The height of the image.
+- `width` (int): The width of the image.
+- `image` (RGBTRIPLE[][]): The 2D array representing the image pixels.
+```
 ### Limitations
 - The application supports only 24-bit uncompressed BMP version 4.0 images. Other image formats are not supported.
 - The application requires sufficient memory to store the image data. If there is not enough memory available, an error message will be displayed.
