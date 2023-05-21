@@ -88,7 +88,7 @@ This function applies a blur effect to the image by averaging the RGB values of 
 - `height` (int): The height of the image.
 - `width` (int): The width of the image.
 - `image` (RGBTRIPLE[][]): The 2D array representing the image pixels.
-```
+
 ### Limitations
 - The application supports only 24-bit uncompressed BMP version 4.0 images. Other image formats are not supported.
 - The application requires sufficient memory to store the image data. If there is not enough memory available, an error message will be displayed.
