@@ -1,4 +1,4 @@
-## Documentation: Image Filtering Application
+##  Image Filtering Application
 
 This documentation provides an overview and usage instructions for an image filtering application implemented in C.
 
